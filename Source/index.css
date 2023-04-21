@@ -1,0 +1,113 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+
+:root {
+    --font: 'Poppins';
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Verydarkblue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: content-box;
+}
+
+header {
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+body {
+    background-color: var(--VeryLightGray);
+}
+
+.Contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Contenedor .Caja {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 15px 10px 23px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 10px 23px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 10px 23px -3px rgba(0, 0, 0, 0.75);
+}
+.Contenedor .Caja:hover {
+    background-color: var(--VeryLightGray);
+}
+
+.Contenedor .CYAN:hover{
+    border: 4px solid var(--Cyan);
+}
+
+.Contenedor .ROJO:hover {
+    border: 4px solid var(--Red);
+}
+
+.Contenedor .AZUL:hover {
+    border: 4px solid var(--Blue);
+}
+
+.Contenedor .AMARILLO:hover {
+    border: 4px solid var(--Orange);
+}
+
+.Contenedor .CYAN:hover .TITULO {
+    color: var(--Cyan);
+}
+
+.Contenedor .ROJO:hover .TITULO2 {
+    color: var(--Red);
+}
+
+.Contenedor .AZUL:hover .TITULO3 {
+    color: var(--Blue);
+}
+
+.Contenedor .AMARILLO:hover .TITULO4 {
+    color: var(--Orange);
+}
+
+.Contenedor .Supervisor {
+    transform: translateY(50%);
+}
+
+.Contenedor .Calculadora {
+    transform: translateY(50%);
+}
+
+.Contenedor .CYAN {
+    border-top: 4px solid var(--Cyan);
+}
+
+.Contenedor .ROJO {
+    border-top: 4px solid var(--Red);
+}
+
+.Contenedor .AZUL {
+    border-top: 4px solid var(--Blue);
+}
+
+.Contenedor .AMARILLO {
+    border-top: 4px solid var(--Orange);
+}
+.Contenedor .Caja:hover img{
+    width: 80px;
+    height: 80px;
+}
+@media(max-width:1000px){
+    .Contenedor .Supervisor, .Contenedor .Calculadora{
+        transform: translateY(0);
+    }
+}
